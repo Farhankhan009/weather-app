@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animated Weather App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="weather-card animated glass" id="card">
+      <h2>🌦️ Weather App</h2>
+      <form id="search-form">
+        <input type="text" id="city-input" placeholder="Enter city..." required />
+        <button type="submit">🔍</button>
+      </form>
+
+      <div id="spinner" class="spinner"></div>
+
+      <div class="weather-info hidden" id="weather-info">
+        <h3 class="fade">📍 <span id="location">-</span></h3>
+        <h1 class="fade"><span id="temperature">--</span>°C</h1>
+        <p class="fade" id="weather">---</p>
+        <img class="fade" id="icon" src="" alt="Weather Icon" style="height: 80px"/>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
